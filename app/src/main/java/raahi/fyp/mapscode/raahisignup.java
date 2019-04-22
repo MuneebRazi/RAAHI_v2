@@ -56,12 +56,12 @@ public class raahisignup extends AppCompatActivity {
 
     }
 
-    public void Customer(View view) {
+    public void raahitoCustomer(View view) {
         Intent raahiintent = new Intent(raahisignup.this,signup.class);
         startActivity(raahiintent);
     }
 
-    public void raahi(View view) {
+    public void raahitoraahi(View view) {
         Intent raahiintent = new Intent(raahisignup.this,raahisignup.class);
         startActivity(raahiintent);
     }

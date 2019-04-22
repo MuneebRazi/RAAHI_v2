@@ -8,24 +8,6 @@
     android:orientation="vertical"
     android:theme="@style/RegistrationPage"
     tools:context=".raahisignup">
-    <LinearLayout
-        android:id="@+id/LinearRP"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        android:gravity="center_vertical"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="15dp"
-            android:layout_marginTop="15dp"
-            android:text="Customer Registration"
-            android:textSize="30sp" />
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,7 +29,7 @@
             app:layout_constraintStart_toEndOf="@id/login"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
-            android:onClick="Customer"/>
+            android:onClick="raahitoCustomer"/>
         <Button
             android:id="@+id/raahi"
             android:layout_width="0dp"
@@ -65,7 +47,26 @@
             app:layout_constraintStart_toEndOf="@id/login"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
-            android:onClick="raahi"/>
+            android:onClick="raahitoraahi"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearRP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Raahi Registration"
+            android:textSize="30sp" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -75,9 +76,6 @@
         android:orientation="vertical"
         android:theme="@style/RegistrationPage"
         >
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
 
         <android.support.design.widget.TextInputLayout
@@ -196,7 +194,7 @@
             android:text="@string/Register"
             android:onClick="register"
             android:theme="@style/ButtonRegister" />
-        </ScrollView>
+
     </LinearLayout>
 
 </LinearLayout>
